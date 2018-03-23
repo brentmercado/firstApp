@@ -1,10 +1,10 @@
 <!-- Data and Event Binding -->
-<label for="databinding">Server Name</label>
+<!-- <label for="databinding">Server Name</label>
 <input
    type="text"
    class="form-control"
    id="databinding"
-   (input)="onUpdateServerName($event)">
+   (input)="onUpdateServerName($event)"> -->
 
 <!-- 2-Way Binding -->
 <label for="2wayBinding">2-Way Databinding</label>
@@ -13,14 +13,14 @@
    class="form-control"
    id="2wayBinding"
    [(ngModel)]="serverName">
-<p>{{ serverName }}</p>
+<!-- <p>{{ serverName }}</p> -->
 <button
    class="btn btn-primary"
    [disabled]="!allowNewServer"
    (click)="onCreateServer()">Add Server
 </button>
-<p [innerText]="allowNewServer"></p>
-<p>{{ allowNewServer }}</p>
+<!-- <p [innerText]="allowNewServer"></p>
+<p>{{ allowNewServer }}</p> -->
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
